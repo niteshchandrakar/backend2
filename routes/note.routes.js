@@ -2,7 +2,7 @@ const express=require("express")
 const PostRouter=express.Router()
 const auth=require("../middleware/auth.middleware")
 const NoteModel=require("../model/note.model")
-PostRouter.get("/get",async(req,res)=>{
+PostRouter.get("/",async(req,res)=>{
     
     try{
         const {title}=req.params
